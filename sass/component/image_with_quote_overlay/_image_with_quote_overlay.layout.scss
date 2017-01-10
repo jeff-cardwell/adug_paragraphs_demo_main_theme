@@ -1,0 +1,52 @@
+/*******************************************************************************
+ * _image_with_quote_overlay.layout.scss
+ * layout
+ ******************************************************************************/
+
+
+.image-with-quote-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .region-2 {
+    display: none;
+
+    z-index: 5;
+    position: absolute;
+    top: auto;
+    bottom: 5%;
+    left: 5%;
+    padding: 5px 5px 1.5em 5px;
+    max-width: 65%;
+    margin-bottom: 1em;
+  }
+
+  .region-3 {
+    position:absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  img {
+    width: 100%;
+    margin: 0;
+  }
+
+  p {
+    margin:0;
+  }
+
+}
+
+@media (min-width: 36em){
+
+  .image-with-quote-overlay {
+
+    .region-2 {
+      display: block;
+    }
+
+  }
+}

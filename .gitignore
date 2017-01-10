@@ -1,0 +1,6 @@
+# Ignore PhpStorm
+.idea/
+# Ignore Composer Directory
+vendor/
+# Ignore nodejs (npm) directory
+node_modules/
