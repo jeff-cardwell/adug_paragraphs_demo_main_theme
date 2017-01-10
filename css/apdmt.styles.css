@@ -3,21 +3,8 @@
  * background
  ******************************************************************************/
 @media (min-width: 36em) {
-  .image-with-quote-overlay .region-2 {
+  .image-with-quote-overlay__quote {
     background-color: rgba(0, 0, 0, 0.25);
-  }
-  .image-with-quote-overlay .region-3::after {
-    content: '';
-    position: absolute;
-    width: 200%;
-    height: 400%;
-    bottom: -145%;
-    left: -50%;
-    z-index: -5;
-    background-image: -webkit-radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 0.45) 28%, transparent 100%);
-    background-image: -webkit-radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 0.45) 10%, transparent 100%);
-    background-image: radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 0.45) 10%, transparent 100%);
-    overflow: visible;
   }
 }
 
@@ -33,19 +20,20 @@
  * _image_with_quote_overlay.fonts.scss
  * fonts
  ******************************************************************************/
-.image-with-quote-overlay p {
-  word-wrap: break-word;
-}
-
-.image-with-quote-overlay .region-2 {
+.image-with-quote-overlay .image-with-quote-overlay__quote {
   font-family: 'La Belle Aurore', cursive;
   font-size: 2em;
   text-shadow: 0px 0px 10px black;
 }
 
-.image-with-quote-overlay .region-3 {
+.image-with-quote-overlay .image-with-quote-overlay__quote > div > p,
+.image-with-quote-overlay .image-with-quote-overlay__quote > p {
+  word-wrap: break-word;
+}
+
+.image-with-quote-overlay .image-with-quote-overlay__citation {
   font-family: 'Homemade Apple',cursive;
-  font-size: .75em;
+  font-size: 1em;
   text-shadow: 0px 0px 10px black;
 }
 
@@ -60,35 +48,41 @@
   overflow: hidden;
 }
 
-.image-with-quote-overlay .region-2 {
-  display: none;
-  z-index: 5;
-  position: absolute;
-  top: auto;
-  bottom: 5%;
-  left: 5%;
-  padding: 5px 5px 1.5em 5px;
-  max-width: 65%;
-  margin-bottom: 1em;
-}
-
-.image-with-quote-overlay .region-3 {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-}
-
-.image-with-quote-overlay img {
+.image-with-quote-overlay__image > div > img,
+.image-with-quote-overlay__image > img {
   width: 100%;
   margin: 0;
 }
 
-.image-with-quote-overlay p {
+.image-with-quote-overlay__quote,
+.image-with-quote-overlay__citation {
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
+.image-with-quote-overlay__quote {
+  left: 0;
+  bottom: 0;
+  margin: 0 0 5% 5%;
+  max-width: 65%;
+  padding: 5px 5px 1.75em 5px;
+}
+
+.image-with-quote-overlay__quote > div > p,
+.image-with-quote-overlay__quote > p {
   margin: 0;
 }
 
+.image-with-quote-overlay__citation {
+  right: 0;
+  bottom: 0;
+  margin: 0 32% 7% 0;
+}
+
 @media (min-width: 36em) {
-  .image-with-quote-overlay .region-2 {
+  .image-with-quote-overlay__quote,
+  .image-with-quote-overlay__citation {
     display: block;
   }
 }

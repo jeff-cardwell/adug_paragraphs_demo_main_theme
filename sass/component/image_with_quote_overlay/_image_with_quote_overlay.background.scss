@@ -5,26 +5,8 @@
 
 @media (min-width: 36em) {
 
-  .image-with-quote-overlay {
-
-    .region-2 {
-      background-color: rgba(0, 0, 0, .25);
-    }
-
-    .region-3::after {
-      content: '';
-      position: absolute;
-      width: 200%;
-      height: 400%;
-      bottom: -145%;
-      left: -50%;
-      z-index: -5;
-      background-image: -webkit-radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 0.45) 28%, transparent 100%);
-      background-image: radial-gradient(ellipse closest-side at 50% 50%, rgba(0, 0, 0, 0.45) 10%, transparent 100%);
-      overflow: visible;
-    }
+  .image-with-quote-overlay__quote {
+    background-color: rgba(0, 0, 0, .25);
   }
-
-
 
 }

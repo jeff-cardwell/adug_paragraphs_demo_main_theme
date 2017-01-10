@@ -2,3 +2,11 @@ global-css:
   css:
     theme:
       css/apdmt.styles.css: {}
+
+fonts-image-with-quote-overlay:
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Homemade+Apple|La+Belle+Aurore': { type: external }

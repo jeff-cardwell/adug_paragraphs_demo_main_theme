@@ -5,19 +5,20 @@
 
 .image-with-quote-overlay {
 
-  p {
-    word-wrap: break-word;
-  }
-
-  .region-2 {
+  .image-with-quote-overlay__quote {
     font-family: 'La Belle Aurore', cursive;
     font-size: 2em;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   }
 
-  .region-3{
+  .image-with-quote-overlay__quote > div > p,
+  .image-with-quote-overlay__quote > p{
+    word-wrap: break-word;
+  }
+
+  .image-with-quote-overlay__citation {
     font-family: 'Homemade Apple',cursive;
-    font-size: .75em;
+    font-size: 1em;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
   }
 
