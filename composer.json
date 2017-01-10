@@ -1,0 +1,14 @@
+{
+    "name": "jeff-cardwell/apdmt",
+    "description": "ADUG Paragraphs Demo Main Theme",
+    "type": "drupal-theme",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Jeff Cardwell",
+            "email": "jeffcardwell@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
