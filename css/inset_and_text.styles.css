@@ -1,0 +1,66 @@
+/*******************************************************************************
+ * _inset-and-text.base.scss
+ * base
+ ******************************************************************************/
+.inset-and-text {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/*******************************************************************************
+ * _inset-and-text.fonts.scss
+ * fonts
+ ******************************************************************************/
+.inset-and-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.15em;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/*******************************************************************************
+ * _image-and-text.layout.scss
+ * layout
+ ******************************************************************************/
+.inset-and-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.inset-and-text .inset-and-text__inset {
+  position: relative;
+}
+
+.inset-and-text .inset-and-text__inset > * {
+  width: 100%;
+  margin: 0;
+}
+
+.inset-and-text.align-left .inset-and-text__inset {
+  margin: 0;
+  width: 50%;
+  float: left;
+  padding: 0 2% 1% 0;
+}
+
+.inset-and-text.align-right .inset-and-text__inset {
+  margin: 0;
+  width: 50%;
+  float: right;
+  padding: 0 0 1% 2%;
+}
+
+@media (min-width: 36em) {
+  .inset-and-text.align-left .inset-and-text__inset {
+    width: 40%;
+  }
+  .inset-and-text.align-right .inset-and-text__inset {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=inset_and_text.styles.css.map */

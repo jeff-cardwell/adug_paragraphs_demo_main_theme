@@ -1,0 +1,15 @@
+{{ attach_library('apdmt/inset-and-text-fonts') }}
+{{ attach_library('apdmt/inset-and-text-css') }}
+
+{% set attributes = attributes.addClass('inset-and-text') %}
+
+{% if content.field_iwwt_horizontal_alignment %}
+    {% set alignment_class = 'align-' ~ content.field_iwwt_horizontal_alignment.0['#markup']|clean_class %}
+    {% set attributes = attributes.addClass(alignment_class) %}
+{% endif %}
+
+{% include "@inset_and_text/paragraph--inset-and-text.html.twig" %}
+
+
+
+

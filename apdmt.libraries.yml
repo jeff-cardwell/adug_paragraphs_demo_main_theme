@@ -3,10 +3,28 @@ global-css:
     theme:
       css/apdmt.styles.css: {}
 
-fonts-image-with-quote-overlay:
+image-with-quote-overlay-fonts:
   license:
     name: SIL Open Font License, 1.1
     url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
   css:
     theme:
       '//fonts.googleapis.com/css?family=Homemade+Apple|La+Belle+Aurore': { type: external }
+
+image-with-quote-overlay-css:
+  css:
+    theme:
+      css/image_with_quote_overlay.styles.css: {}
+
+inset-and-text-fonts:
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      '//fonts.googleapis.com/css?family=Raleway:100,200,300,400': { type: external }
+
+inset-and-text-css:
+  css:
+    theme:
+      css/inset_and_text.styles.css: {}

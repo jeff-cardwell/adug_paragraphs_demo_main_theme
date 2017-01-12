@@ -21,7 +21,7 @@
 .image-with-quote-overlay__citation {
   display: none;
   position: absolute;
-  z-index: 5;
+
 }
 
 .image-with-quote-overlay__quote {
@@ -30,6 +30,7 @@
   margin: 0 0 5% 5%;
   max-width: 65%;
   padding: 5px 5px 1.75em 5px;
+  z-index: 5;
 }
 
 .image-with-quote-overlay__quote > div > p,
@@ -41,6 +42,7 @@
   right: 0;
   bottom: 0;
   margin: 0 32% 7% 0;
+  z-index: 10;
 }
 
 @media (min-width: 36em){

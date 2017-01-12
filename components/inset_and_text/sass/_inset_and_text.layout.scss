@@ -1,0 +1,59 @@
+/*******************************************************************************
+ * _image-and-text.layout.scss
+ * layout
+ ******************************************************************************/
+
+.inset-and-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 4%;
+  box-sizing: border-box;
+
+  .inset-and-text__inset {
+    position: relative;
+  }
+
+  .inset-and-text__inset > * {
+    width: 100%;
+    margin: 0;
+  }
+
+}
+
+.inset-and-text.align-left {
+  .inset-and-text__inset {
+    margin: 0;
+    width: 50%;
+    float: left;
+    padding: 0 2% 1% 0;
+  }
+}
+
+.inset-and-text.align-right {
+  .inset-and-text__inset {
+    margin: 0;
+    width: 50%;
+    float: right;
+    padding: 0 0 1% 2%;
+  }
+}
+
+
+
+@media (min-width: 36em){
+
+  .inset-and-text.align-left {
+    .inset-and-text__inset {
+      width: 40%;
+    }
+  }
+
+  .inset-and-text.align-right {
+    .inset-and-text__inset {
+      width: 40%;
+    }
+  }
+
+}

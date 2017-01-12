@@ -8,6 +8,15 @@ core: 8.x
 libraries:
   - bartik/global-styling
   - apdmt/global-css
+
+component-libraries:
+  image_with_quote_overlay:
+    paths:
+      - components/image_with_quote_overlay/twig
+  inset_and_text:
+    paths:
+      - components/inset_and_text/twig
+
 regions:
   header: Header
   primary_menu: 'Primary menu'
