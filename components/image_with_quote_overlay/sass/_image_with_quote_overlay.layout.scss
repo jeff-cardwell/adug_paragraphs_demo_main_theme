@@ -16,8 +16,10 @@
   }
 
 
-  .image-with-quote-overlay__image > div > img,
-  .image-with-quote-overlay__image > img {
+  .image-with-quote-overlay__image > * > *,
+  .image-with-quote-overlay__image > * {
+    display: block;
+    height: auto;
     width: 100%;
     margin: 0;
   }

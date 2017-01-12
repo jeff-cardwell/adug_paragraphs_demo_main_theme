@@ -1,4 +1,3 @@
-uuid: fdab18b8-f604-43fb-8325-2ddafbfb6953
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - system
   theme:
     - apdmt
-_core:
-  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
 id: apdmt_content
 theme: apdmt
 region: content

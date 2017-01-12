@@ -3,8 +3,8 @@
 
 {% set attributes = attributes.addClass('inset-and-text') %}
 
-{% if content.field_iwwt_horizontal_alignment %}
-    {% set alignment_class = 'align-' ~ content.field_iwwt_horizontal_alignment.0['#markup']|clean_class %}
+{% if content.field_iwwt1_horizontal_alignment %}
+    {% set alignment_class = 'align-' ~ content.field_iwwt1_horizontal_alignment.0['#markup']|clean_class %}
     {% set attributes = attributes.addClass(alignment_class) %}
 {% endif %}
 

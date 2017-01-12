@@ -15,7 +15,10 @@
     position: relative;
   }
 
-  .inset-and-text__inset > * {
+  .inset-and-text__inset > *,
+  .inset-and-text__inset > * > * {
+    display: block;
+    height: auto;
     width: 100%;
     margin: 0;
   }

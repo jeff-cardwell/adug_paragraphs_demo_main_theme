@@ -13,7 +13,7 @@
 .inset-and-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 1.15em;
+  font-size: 1.5em;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -35,7 +35,10 @@
   position: relative;
 }
 
-.inset-and-text .inset-and-text__inset > * {
+.inset-and-text .inset-and-text__inset > *,
+.inset-and-text .inset-and-text__inset > * > * {
+  display: block;
+  height: auto;
   width: 100%;
   margin: 0;
 }

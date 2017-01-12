@@ -1,4 +1,3 @@
-uuid: aaaf39fd-0a80-4505-813c-78e1cc8b56b0
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,6 @@ dependencies:
     - system
   theme:
     - apdmt
-_core:
-  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
 id: apdmt_account_menu
 theme: apdmt
 region: secondary_menu
