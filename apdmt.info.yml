@@ -16,6 +16,9 @@ component-libraries:
   inset_and_text:
     paths:
       - components/inset_and_text/twig
+  multi_column_layout:
+    paths:
+      - components/multi_column_layout/twig
 
 regions:
   header: Header
