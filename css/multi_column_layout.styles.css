@@ -2,6 +2,27 @@
  * _multi_column_layout.base.scss
  * base
  ******************************************************************************/
+.multi-column-layout .link-container > a:hover::before {
+  background-color: rgba(160, 160, 160, 0.35);
+  opacity: .3;
+}
+
+.multi-column-layout .link-container > a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.multi-column-layout .link-container .link-container > a::before {
+  z-index: -10;
+}
+
 /*******************************************************************************
  * _multi_column_layout.fonts.scss
  * fonts
@@ -15,7 +36,14 @@
   height: 100%;
 }
 
-.multi-column-layout .multi-column-layout__region {
+/*.multi-column-layout__region {
+  position: relative;
+  padding: 1%;
+  background: rgba(0, 0, 0, .1);
+  overflow: hidden;
+  z-index: 10;
+}*/
+.multi-column-layout > .field__items > .field__item {
   position: relative;
   padding: 1%;
   background: rgba(0, 0, 0, 0.1);
@@ -33,8 +61,14 @@
         -ms-flex-direction: row;
             flex-direction: row;
     width: 100%;
+    margin: 0;
   }
-  .multi-column-layout .multi-column-layout__region {
+  /*.multi-column-layout {
+    .multi-column-layout__region {
+      flex: 1;
+    }
+  }*/
+  .multi-column-layout > .field__items > .field__item {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;

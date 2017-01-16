@@ -2,3 +2,36 @@
  * _multi_column_layout.base.scss
  * base
  ******************************************************************************/
+
+.multi-column-layout {
+
+  .link-container > a:hover::before{
+    background-color: rgba(160,160,160,0.35);
+    opacity: .3;
+  }
+
+  .link-container > a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 5px;
+
+    z-index: 10;
+  }
+
+  //in case of nested items with link-container, only top link-container will be link
+  .link-container {
+    .link-container > a::before {
+      z-index: -10;
+    }
+  }
+
+}
+
+
+
+
