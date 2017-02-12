@@ -2,8 +2,17 @@
  * _inset-and-text.base.scss
  * base
  ******************************************************************************/
+/*******************************************************************************
+ * _inset-and-text.demo.scss
+ * demo style
+ ******************************************************************************/
 .inset-and-text {
-  background: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 3px;
+  background-color: #eed5ba;
+  border-color: #9d4a0b;
 }
 
 /*******************************************************************************
@@ -11,6 +20,7 @@
  * fonts
  ******************************************************************************/
 .inset-and-text {
+  color: black;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 1.5em;
@@ -24,7 +34,6 @@
  ******************************************************************************/
 .inset-and-text {
   position: relative;
-  width: 100%;
   height: 100%;
   overflow: hidden;
   padding: 4%;

@@ -24,6 +24,19 @@
 }
 
 /*******************************************************************************
+ * _multi_column_layout.demo.scss
+ * demo style
+ ******************************************************************************/
+.multi-column-layout {
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 3px;
+  background-color: #bdd1e5;
+  border-color: #113cb8;
+}
+
+/*******************************************************************************
  * _multi_column_layout.fonts.scss
  * fonts
  ******************************************************************************/
@@ -32,21 +45,15 @@
  * layout
  ******************************************************************************/
 .multi-column-layout {
-  width: 100%;
+  position: relative;
   height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-/*.multi-column-layout__region {
-  position: relative;
-  padding: 1%;
-  background: rgba(0, 0, 0, .1);
-  overflow: hidden;
-  z-index: 10;
-}*/
 .multi-column-layout > .field__items > .field__item {
   position: relative;
   padding: 1%;
-  background: rgba(0, 0, 0, 0.1);
   overflow: hidden;
   z-index: 10;
 }
@@ -63,11 +70,6 @@
     width: 100%;
     margin: 0;
   }
-  /*.multi-column-layout {
-    .multi-column-layout__region {
-      flex: 1;
-    }
-  }*/
   .multi-column-layout > .field__items > .field__item {
     -webkit-box-flex: 1;
         -ms-flex: 1;
