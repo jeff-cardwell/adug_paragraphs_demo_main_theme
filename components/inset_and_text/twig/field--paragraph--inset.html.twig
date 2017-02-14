@@ -2,8 +2,8 @@
     Extends 'field.html.twig' following the rules of theme inheritance, see
     https://www.drupal.org/node/2387069 for details
 
-    Only applies to paragraphs fields with the field name field_iwq2_image
+    Adds css class inset-and-text__inset to the attributes variable
 #}
 
 {% extends "field.html.twig" %}
-{% set attributes = attributes.addClass('inset-and-text__inset') %}
+{% set attributes = attributes.adddClass('inset-and-text__inset') %}

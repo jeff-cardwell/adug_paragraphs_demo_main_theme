@@ -1,2 +1,10 @@
+{#
+    Extends 'node.html.twig' following the rules of theme inheritance, see
+    https://www.drupal.org/node/2387069 for details
+
+    Adds css class link-container to the title_attributes variable.  Please see
+    ../sass/_multi_column_layout.base.scss for details.
+#}
+
 {% extends "node.html.twig" %}
 {% set title_attributes = title_attributes.addClass('link-container') %}
