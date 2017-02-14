@@ -28,3 +28,8 @@ inset-and-text-css:
   css:
     theme:
       css/inset_and_text.styles.css: {}
+
+multi-column-layout-css:
+  css:
+    theme:
+      css/multi_column_layout.styles.css: {}

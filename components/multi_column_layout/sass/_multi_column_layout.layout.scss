@@ -1,0 +1,34 @@
+/*******************************************************************************
+ * _multi_column_layout.layout.scss
+ * layout
+ ******************************************************************************/
+
+.multi-column-layout {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.multi-column-layout > .field__items > .field__item {
+  position: relative;
+  padding: 1%;
+  overflow: hidden;
+  z-index: 10;
+}
+
+
+@media (min-width: 36em){
+
+  .multi-column-layout > div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+  .multi-column-layout > .field__items > .field__item {
+    flex: 1;
+  }
+
+}

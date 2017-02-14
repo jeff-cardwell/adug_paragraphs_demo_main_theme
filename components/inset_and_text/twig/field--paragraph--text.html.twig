@@ -2,8 +2,8 @@
     Extends 'field--text.html.twig' following the rules of theme inheritance, see
     https://www.drupal.org/node/2387069 for details
 
-    Only applies to paragraphs fields with the field name field_iwq2_citation
+    Adds css class inset-and-text__text to the attributes variable
 #}
 
 {% extends "field--text.html.twig" %}
-{% set attributes = attributes.addClass('image-with-quote-overlay__citation') %}
+{% set attributes = attributes.addClass('inset-and-text__text') %}
